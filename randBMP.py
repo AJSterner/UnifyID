@@ -23,4 +23,4 @@ DIB_header += struct.pack('<h', 1)
 DIB_header += struct.pack('<h', 24)
 
 with open('rand.bmp', 'w+') as img:
-        img.write(header + DIB_header + bytes(imdata))
+        img.write(header + DIB_header + bytearray(imdata))
